@@ -3,17 +3,14 @@
 
 <head>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src='https://kit.fontawesome.com/c1eae85dfa.js' crossorigin='anonymous'></script>
     <script src="./app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,17 +21,19 @@
             <div class="respmenu">
                 <nav class="menu">
                     <ul class="menu-list">
-                        <li><a href="">About Me</a></li>
-                        <li> <a href="">Portfolio</a></li>
-                        <li><a href="">Photography Tips</a></li>
-                        <li class="logo"><img src="./img/logo.png" alt="captured moments"></li>
-                        <li><a href="">Behind the Scenes</a></li>
-                        <li><a href="">Photo My Life</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="./paginas/aboutme.html">About Me</a></li>
+                        <li> <a href="./paginas/portfolio.html">Portfolio</a></li>
+                        <li><a href="./paginas/photographytips.html">Photography Tips</a></li>
+                        <li class="logo">
+                            <img src="./img/logo.png" alt="captured moments">
+                        </li>
+                        <li><a href="./paginas/behindthescenes.html">Behind the Scenes</a></li>
+                        <li><a href="./paginas/photomylife.html">Photo My Life</a></li>
+                        <li><a href="./paginas/contact.html">Contact</a></li>
                     </ul>
                     <span class="btn-menu">
-                    <i class="fa fa-bars" style="font-size: 27px;"></i>
-                    </span>
+                <i class="fa fa-bars" style="font-size: 27px;"></i>
+                </span>
                 </nav>
 
             </div>
@@ -45,36 +44,62 @@
             <div class="text-description">
                 <h1>Bienvenidos a Captured Moments
                 </h1>
-                <h3>Gracias por entrar a mi pagina de fotos donde te mostrare mis trabajos y un poco de mi dia a dia, espero y les agrade...
+                <h3> La fotografía no es tan fácil como se piensa a veces la gente. Cuando te piden una foto, te exigen mucha prisa, piensan que es disparar y ya. Una buena foto requiere muchísimo tiempo, para mí es como el rodaje de una escena de una película.
+                    – Ouka Leele
                 </h3>
-                <p>
-                    La fotografía no es tan fácil como se piensa a veces la gente. Cuando te piden una foto, te exigen mucha prisa, piensan que es disparar y ya. Una buena foto requiere muchísimo tiempo, para mí es como el rodaje de una escena de una película. – Ouka Leele
-                </p>
+
             </div>
             <div class="img-description">
                 <img class="face" src="./img/face.jpeg" alt="face">
-                <img class="lookup" src="./img/lookup.jpeg" alt="look up">
+
+                <img class="catrina" src="./img/catrina.jpeg" alt="look up">
             </div>
         </section>
         <!--   2nd section    -->
         <section class="setup-appt">
-            <form action="">
+            <h2>Aqui podras mandar informacion para tu cotizacion</h2>
+            <form class="pricing" action="">
                 <p>
-                    <label for="Cita"> Cita para todo el dia</label><br>
-                    <input type="checkbox" name="cita" value="">
+                    <label for="cita"> Cita para todo el dia</label><br>
+                    <input id="cita" type="checkbox" name="cita" value="">
                 </p>
                 <p>
                     <label for="cambios"> Cuantos cambios seran?</label><br>
                     <input type="text" name="cambios" value="">
                 </p>
                 <p>
-                    <label for="cambios"> Cuantos fotos por vestuario?</label><br>
-                    <input type="text" name="cambios" value="">
+                    <label for="Cuantos fotos por vestuario?"> Cuantos fotos por vestuario?</label><br>
+                    <input id="Cuantos fotos por vestuario?" type="text" name="cambios" value="">
                 </p>
+                <select name="estilos">
+                    <option value="select">Select...</option>
+                    <option value="Infantil">Infantil</option>
+                    <option value="Bodas">Bodas</option>
+                    <option value="Artistica">Artistica/Creativa</option>
+                    <option value="Moda">Moda</option>
+                    <option value="Naturaleza">Naturaleza</option>
+                    <option value="Callejera">Callejera</option>
+                    <option value="Eventos">Eventos</option>
+                    <option value="Retrato">Retrato</option>
+                </select>
             </form>
         </section>
         <!--   3rd section    -->
-        <section></section>
+        <section class="categories">
+            <h2>Estas son algunas de las categorias trabajadas</h2>
+            <div>
+                <a href=" "><img src="" alt="Infantil"></a>
+                <a href=" "><img src="" alt="Bodas"></a>
+                <a href=" "><img src="" alt="Artistica/Creativa"></a>
+                <a href=" "><img src="" alt="Moda"></a>
+                <a href=" "><img src="" alt="Naturaleza"></a>
+                <a href=" "><img src="" alt="Callejera"></a>
+                <a href=" "><img src="" alt="Eventos"></a>
+                <a href=" "><img src="" alt="Retrato"></a>
+            </div>
+        </section>
+        <!--   4th section    -->
+        <section class=" contact "></section>
     </main>
 </body>
 
